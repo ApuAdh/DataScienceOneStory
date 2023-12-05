@@ -1,11 +1,3 @@
-//Custom Animations
-document.getElementById("yes").onclick = function(){
-    document.getElementById("Arceus").className = "visible";
-    document.getElementById("arceus-text-one").className = "visible";
-    document.getElementById("arceus-text-two").className = "visible2";
-    document.getElementById("but_button").className = "title visible3";
-}
-
 //Progress Barr
 window.onscroll = function() {scrollBar()};
 function scrollBar() {
@@ -27,11 +19,10 @@ const observer = new IntersectionObserver((entries) => {
     }
   })
 })
-
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-//transition to page two
-document.getElementById("but").onclick = function(){
-  
+//Custom Animation
+document.getElementById("yes").onclick = function(){
+  document.getElementById("custom-animation").classList.add("visible");
 }

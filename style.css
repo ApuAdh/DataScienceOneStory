@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body{
-    background-color: black;
-    color: white;
     font-family: 'Poppins', monospace;
 }
 .header {
@@ -10,17 +8,18 @@ body{
     top: 0;
     z-index: 1;
     width: 99%;
-    border: solid white;
+    margin-top: 5px;
+    border: solid 3px black;
     border-radius: 20px;
 }
 .progress-container {
     width: 100%;
     height: 8px;
-    background: black;
+    background: white;
 }
 .progress-bar {
     height: 8px;
-    background: white;
+    background: black;
     width: 0%;
 }
 .title{
@@ -28,66 +27,48 @@ body{
     align-items: center;
     justify-content: center;
 }
-.yes{
-    border: solid white;
-    background-color: black;
-    color:white;
+.title-button{
     width:25%;
-    border-radius: 20px;
-    transition: background-color 0.4s, color 0.4s, width 1s;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 200px;
+    transition: color 0.5s ,all 1s;
 }
-.yes:hover{
-    background-color:white;
-    color:black;
+.title-button:hover{
     width:50%;
-    transition: background-color 0.4s, color 0.4s, width 1s;
-}
-.Arceus{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.invisible{
-    transform: translateX(-251%);
-}
-.visible{
-    transform: translateX(0);
-    transition: transform 2s;
-}
-.visible2{
-    transform: translateX(0);
-    transition: transform 4s;
-}
-.visible3{
-    transform: translateX(0);
-    transition: transform 6s;
-}
-.Arceus-text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#but{
-    border: solid white;
     background-color: black;
-    color:white;
-    border-radius: 20px;
-    transition: all, 0.5s;
+    color: white;
+    border: solid 2px black;
+    border-radius: 200px;
 }
-#but:hover{
-    background-color:white;
-    color:black;
-    transition: all, 0.5s;
+.container{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
 }
-section{
+.image{
+    max-width: 100%;
+    max-height:100%;
+}
+.bigger-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow{
     display:flex;
     align-items: center;
     justify-content: center;
 }
-.hidden{
-    transform: translateX(-100%);
-    transition: all 3s;
+.invisible, .hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 2.5s;
 }
-.show{
+.visible, .show{
+    opacity:1;
+    filter: blur(0);
     transform: translateX(0);
 }
