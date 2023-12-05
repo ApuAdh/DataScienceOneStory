@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', monospace;
+}
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 99%;
+    border: solid white;
+    border-radius: 20px;
+}
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: black;
+}
+.progress-bar {
+    height: 8px;
+    background: white;
+    width: 0%;
+}
+.title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.yes{
+    border: solid white;
+    background-color: black;
+    color:white;
+    width:25%;
+    border-radius: 20px;
+    transition: background-color 0.4s, color 0.4s, width 1s;
+}
+.yes:hover{
+    background-color:white;
+    color:black;
+    width:50%;
+    transition: background-color 0.4s, color 0.4s, width 1s;
+}
+.Arceus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.invisible{
+    transform: translateX(-251%);
+}
+.visible{
+    transform: translateX(0);
+    transition: transform 2s;
+}
+.visible2{
+    transform: translateX(0);
+    transition: transform 4s;
+}
+.visible3{
+    transform: translateX(0);
+    transition: transform 6s;
+}
+.Arceus-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#but{
+    border: solid white;
+    background-color: black;
+    color:white;
+    border-radius: 20px;
+    transition: all, 0.5s;
+}
+#but:hover{
+    background-color:white;
+    color:black;
+    transition: all, 0.5s;
+}
+section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.hidden{
+    transform: translateX(-100%);
+    transition: all 3s;
+}
+.show{
+    transform: translateX(0);
+}
