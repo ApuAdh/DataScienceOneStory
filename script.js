@@ -9,20 +9,19 @@ function scrollBar() {
   }
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-
-//Scroll Animations
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry);
-    if (entry.isIntersecting){
-      entry.target.classList.add('show');
-    }
-  })
-})
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
-
 //Custom Animation
 document.getElementById("yes").onclick = function(){
   document.getElementById("custom-animation").classList.add("visible");
+  /*Scroll Animations (Having the scroll animations in this part of the
+   code ensures that they only occour when the YES button is clicked)*/
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+    })
+  })
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
 }
