@@ -44,3 +44,5 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+//Animation for dropdown/accodion Menu
+
