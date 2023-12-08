@@ -73,23 +73,27 @@ body{
     transform: translateX(0);
 }
 .accordion {
-    background-color: #eee;
+    background-color: white;
     color: #444;
     cursor: pointer;
     padding: 18px;
     width: 50%;
     text-align: left;
-    border: none;
+    border: solid 2px black;
+    margin: 2px;
     outline: none;
     transition: 0.4s;
+    text-align: center;
   }
   
   
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #eee;
 }
 .panel {
+    text-align:center;
     padding: 0 18px;
+    width: auto;
     background-color: white;
     max-height: 0;
     overflow: hidden;

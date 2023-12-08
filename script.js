@@ -1,4 +1,4 @@
-//Progress Barr
+//Progress Bar
 window.onscroll = function() {scrollBar()};
 function scrollBar() {
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -12,8 +12,11 @@ function scrollBar() {
 //Custom Animation
 document.getElementById("yes").onclick = function(){
   document.getElementById("custom-animation").classList.add("visible");
-  /*Scroll Animations (Having the scroll animations in this part of the
-   code ensures that they only occour when the YES button is clicked)*/
+  /*
+  Scroll Animations (The code was originally outside this fuction but having it here
+  it fixes a bug copy and paste it outside to check the bug out if you're interested.
+  Its pretty funny)
+  */
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       console.log(entry);
@@ -26,7 +29,7 @@ document.getElementById("yes").onclick = function(){
   hiddenElements.forEach((el) => observer.observe(el));
 }
 
-//dropdown Menu
+//dropdown/accordion Menu
 let acc = document.getElementsByClassName("accordion");
 let i;
 
