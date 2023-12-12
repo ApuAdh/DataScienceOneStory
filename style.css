@@ -121,3 +121,15 @@ a::after {
 a:hover::after {
     height:100%;
 }
+.selector{
+    display:grid;
+    place-items: center;
+}
+input{
+    height: 80%;
+    width:20%;
+    border: solid black 5px;
+    border-radius: 20px;
+    font-size: 200%;
+    text-align: center;
+}
