@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    display: grid;
+    place-items: center;
+}
+
+.yes_button {
+    width: 25%;
+    background-color: black;
+    color: white;
+    border: solid white 2px;
+    border-radius: 200px;
+    transition: all 1s;
+}
+
+.yes_button:hover {
+    width: 35%;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.Introduction {
+    display: grid;
+    place-items: center;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.Introduction-text-to-fix-arceus-bug {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Arceus_Image {
+    width: 10%;
+}
+
+#Infernape_Image {
+    width: 8%;
+}
+
+.invisible{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.invisible1 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.invisible2 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+.invisible3 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2.5s;
+}
+
+.invisible4 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 3s;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.visible,
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+a::after {
+    content: '';
+    width: 0;
+    height: 12%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.fighting {
+    color: orangered;
+    text-decoration: none;
+}
+
+.fighting::after {
+    background-color: orangered;
+}
+
+.choice_scarf {
+    color: aqua;
+    text-decoration: none
+}
+
+.choice_scarf::after {
+    background-color: aqua;
+}
+
+.grass {
+    color: #00ff95;
+    text-decoration: none;
+}
+
+.grass::after {
+    background: #00ff95;
+}
+
+.normal {
+    color: white;
+    text-decoration: underline;
+}
+
+.types {
+    background: -webkit-linear-gradient(45deg, orangered, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.types::after {
+    background-color: rgb(215, 121, 14);
+}
+
+.god-of-all-pokemon {
+    color: yellow;
+    text-shadow: 4px 4px 10px yellow;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: black;
+}
+
+.progress-bar {
+    height: 8px;
+    background: white;
+    width: 0%;
+}
+
+.submission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container{
+    padding:0;
+    margin:0;
+}
+.buttons{
+    background-color:orangered;
+    border: solid black 2px;
+    padding-right: 10%;
+    padding-left: 10%;
+    transition: all 0.3s;
+    border-radius: 20px;
+}
+.buttons:hover{
+    cursor: pointer;
+    color: orangered;
+    background-color: black;
+    border: solid orangered 2px;
+}
+.water{
+    background-color:aqua;
+}
+.water:hover{
+    color: aqua;
+    border: solid aqua 2px;
+}
+.grass_button{
+    color:black;
+    background-color:#00ff95;
+}
+.grass_button:hover{
+    color: #00ff95;
+    border: solid #00ff95 2px;
+}
+.normal_button{
+    background-color: white;
+}
+.normal_button:hover{
+    color:white;
+    border: solid white 2px;
+}
+.electric{
+    background-color: yellow;
+}
+.electric:hover{
+    color: yellow;
+    border: solid yellow 2px;
+}
+.ice{
+    background-color: aquamarine;
+    padding-left: 8.8%;
+}
+.ice:hover{
+    color: aquamarine;
+    border: solid aquamarine 2px;
+}
+.fighting_button{
+    background-color: red;   
+}
+.fighting_button:hover{
+    color: red;
+    border: solid red 2px;
+}
+.poison{
+    background-color: violet;
+}
+.poison:hover{
+    color:violet;
+    border: solid violet 2px;
+}
+.bug{
+    background-color: yellowgreen;
+}
+.bug:hover{
+    color: yellowgreen;
+    border: solid yellowgreen 2px;
+}
+.flying{
+    background-color: skyblue;
+}
+.flying:hover{
+    color:skyblue;
+    border: solid skyblue 2px;
+}
+.psychic{
+    background-color: rgb(168, 14, 215);
+}
+.psychic:hover{
+    color: rgb(168, 14, 215);
+    border: solid rgb(168, 14, 215) 2px;
+}
+.dark{
+    background-color: grey;
+}
+.dark:hover{
+    color: grey;
+    border: solid grey 2px;
+}
+.ghost{
+    background-color: blueviolet;
+}
+.ghost:hover{
+    color: blueviolet;
+    border: solid blueviolet 2px;
+}
+.fairy{
+    background-color: pink;
+}
+.fairy:hover{
+    color:pink;
+    border: solid pink 2px;
+}
+.steel{
+    background-color: rgb(144, 176, 216);
+}
+.steel:hover{
+    color: rgb(144, 176, 216);
+    border: solid rgb(144, 176, 216) 2px;
+}
+.rock{
+    background-color: rgb(224, 169, 91);
+}
+.rock:hover{
+    color: rgb(224, 169, 91);
+    border: solid rgb(224, 169, 91) 2px;
+}
+.dragon{
+    background-color: rgb(39, 50, 173);
+}
+.dragon:hover{
+    color: rgb(39, 50, 173);
+    border: solid rgb(39, 50, 173) 2px;
+}
+.ground{
+    background-color: goldenrod;
+}
+.ground:hover{
+    color: goldenrod;
+    border: solid goldenrod 2px;
+}
+.water_a {
+    color: aqua;
+    text-decoration: none;
+}
+.water_a::after {
+    background-color: aqua;
+}
+.grass_a {
+    color: #00ff95;
+    text-decoration: none;
+}
+.grass_a::after {
+    background-color: #00ff95;
+}
+.normal_a {
+    color: white;
+    text-decoration: none;
+}
+.normal_a::after {
+    background-color: white;
+}
+.electric_a {
+    color: yellow;
+    text-decoration: none;
+}
+.electric_a::after {
+    background-color: yellow;
+}
+.ice_a {
+    color: aquamarine;
+    text-decoration: none;
+}
+.ice_a::after {
+    background-color: aquamarine;
+}
+.poison_a {
+    color: violet;
+    text-decoration: none;
+}
+.poison_a::after {
+    background-color: violet;
+}
+.bug_a {
+    color: yellowgreen;
+    text-decoration: none;
+}
+.bug_a::after {
+    background-color: yellowgreen;
+}
+.flying_a {
+    color: skyblue;
+    text-decoration: none;
+}
+.flying_a::after {
+    background-color: skyblue;
+}
+.psychic_a {
+    color: rgb(168, 14, 215);
+    text-decoration: none;
+}
+.psychic_a::after {
+    background-color: rgb(168, 14, 215);
+}
+.dark_a {
+    color: grey;
+    text-decoration: none;
+}
+.dark_a::after {
+    background-color: grey;
+}
+.ghost_a {
+    color: blueviolet;
+    text-decoration: none;
+}
+.ghost_a::after {
+    background-color: blueviolet;
+}
+.fairy_a {
+    color: pink;
+    text-decoration: none;
+}
+.fairy_a::after {
+    background-color: pink;
+}
+.steel_a{
+    color: rgb(144, 176, 216);
+    text-decoration: none;
+}
+.steel_a::after{
+    background-color:rgb(144, 176, 216);
+}
+.rock_a{
+    color: rgb(224, 169, 91);
+    text-decoration: none;
+}
+.rock_a::after{
+    background-color: rgb(224, 169, 91);
+}
+.dragon_a{
+    color: rgb(39, 50, 173);
+    text-decoration: none;
+}
+.dragon_a::after{
+    background-color: rgb(39, 50, 173);   
+}
+.ground_a{
+    color: goldenrod;
+    text-decoration: none;
+}
+.ground_a::after{
+    background-color: goldenrod;
+}
+.analysis_button{
+    border: solid white 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: black;
+    color:white;
+    transition: all 0.5s;
+}
+.analysis_button:hover{
+    color: black;
+    border: solid black 2px;
+    background-color: white;
+}
