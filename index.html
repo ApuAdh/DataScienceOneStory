@@ -4,122 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strongest Pokemon</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
     <div class="header">
         <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
+          <div class="progress-bar" id="myBar"></div>
         </div>
     </div>
 
     <div class="title">
-        <h1>Have You Ever Wondered Who is the Strongest Pokemon?</h1>
-    </div>
-
-    <div class="title">
-        <button class="title-button" id="yes">
+        <h1>Have you ever wondered who is the <span class="strongest_pokemon_text">strongest pokemon?</span></h1>
+        <button class="yes_button" id="yes">
             <h1>Yes</h1>
         </button>
     </div>
 
+    <div class="Introduction" id="custom-animation">
+        <div class="Introduction-text-to-fix-arceus-bug invisible1" id="invisible1">
+            <h2>Well you might think the answer is easy, Arceus</h2>
+            <img src="Arceus.png" alt="Arceus" id="Arceus_Image">
+        </div>
+        <div class="god-of-all-pokemon invisible2" id="invisible2">
+            <h2>The God Of All Pokemon</h2>
+        </div>
 
-    <div class="bigger-container invisible" id="custom-animation">
-        <div class="container" >
-            <div class="image">
-                <img src="Arceus.png" alt="Arceus" style="width:90%">
-            </div>
-
-            <div>
-                <h2 class="title">Well You might think that the anwer is</h2>
-                <h2 class="title">easy right?</h2>
-                <h2 class="title">Arceus</h2>
-                <h2 class="title">The God of all Pokemon</h2>
-            </div>
-
-            <div class="arrow">
-                <h2 style="font-size: 600%;">⇩⇩⇩</h2>
+        <div class="Introduction-text-to-fix-arceus-bug invisible3" id="invisible3">
+            <h2>Well what if I tell you that there is more math in pokemon than you ever thought.
+                Let's take a look at the following graph:
+            </h2>
+            <div style="width:45%;">
+                <canvas id="InfernapeChart"></canvas>
             </div>
         </div>
-    </div>
 
-    <div class="bigger-container hidden">
-        <div class="container">
-            <div>
-                <h2 class="title">Well What if I tell you that there is</h2>
-                <h2 class="title">more math in Pokemon than you ever</h2>
-                <h2 class="title">thought</h2>
-            </div>
-
-            <div class="image" style="padding-left:20%;">
-                <img src="Infernape.png" alt="Infernape" style="width:90%">
-            </div>
-
-            <div>
-                <h2 class="title">Infact</h2>
-                <h2 class="title">Infernape Here Could</h2>
-                <h2 class="title">Beat The Literal God Of Pokemon</h2>
-                <h2 class="title">With the Help Of</h2>
-                <h2 class="title">Maths</h2>
-            </div>
+        <div class="Introduction-text-to-fix-arceus-bug invisible4" id="invisible4">
+            <h2>The Given Graph Compares the Stats of Infernape</h2>
+            <img src="Infernape.png" alt="Infernape_Image" id="Infernape_Image">
+            <br>
+            <h2>With Arcues</h2>
+            <img src="Arceus.png" alt="Arceus" style="width:10%;">
         </div>
-    </div>
 
-    <div class="hidden">
-        <h2 class="title">In Pokemon there are 6 different stats that</h2>
-        <h2 class="title">every pokemon has along with that they also</h2>
-        <h2 class="title">have their own types, and natures </h2>
-    </div>
+        <div class="hidden">
+            <h2>Looking at the graph you might think that Arceus absolutely dogwater Infernape.
+                But there is one crucial detail we are missing. Infernape is a <a href="https://pokemondb.net/type/fighting" class="fighting" target="_blank">fighting</a> type pokem-
+                on, whereas Arceus is a <a href="https://pokemondb.net/type/normal" target="_blank" class="normal">normal</a> type pokemon. Which means if Infernape uses the move
+                <a href="https://pokemondb.net/move/close-combat" class="fighting" target="_blank">"Close Combat"</a>, which has a base damamge of 120 and is a fighting type move so the
+                damage is multiplied by two when it hits Arcues. Then Infernape can use the held item,
+                <a href="https://bulbapedia.bulbagarden.net/wiki/Choice_Scarf" class="choice_scarf" target="_blank">Choice Scarf</a> to outspeed
+                and absolutely destroy Arceus.  
+            </h2>
+        </div>
 
-    <div class="title hidden" style="margin:1px">
-        <h1>How do they work?</h1>
-    </div>
+        <div class="hidden">
+            <h2>Well that might be a little confusing so let's slow down a bit. In Pokemon there isn't a one
+                "Strongest Pokemon". There are many multiple things that can have an effect on a battle. In the
+                previous paragraph we talked about pokemon <a href="https://pokemondb.net/type" target="_blank" class="types">types</a> and <a href="https://pokemondb.net/item/all" class="types" target="_blank">held items</a>. There are multiple different
+                held items that exist in pokemon. They all have a cool effect on the battlefield, the <a href="https://bulbapedia.bulbagarden.net/wiki/Choice_Scarf" class="choice_scarf" target="_blank">Choice Scarf</a>
+                locks your pokemon to be able to only use one move but increases the speed stat by 1.5X
+            </h2>
+        </div>
 
-    <div class="container-2 hidden">
+        <div class="hidden">
+            <h2>Altough <a href="https://pokemondb.net/item/all" class="types" target="_blank">held items</a> play a crucial role in pokemon battles,
+            the biggest thing that affects a fight between two pokemon is their <a href="https://pokemondb.net/type" target="_blank" class="types">type.</a>
+            Let's say you are having a pokemon battle between your friends, they have a <a href="https://pokemondb.net/type/water" target="_blank" class="choice_scarf">water</a> type
+            pokeomn and you have a <a href="https://pokemondb.net/type/grass" target="_blank" class="grass">grass</a> type pokemon. You might think you have the advantage here,
+            but if they have a <a href="https://pokemondb.net/pokedex/blastoise" target="_blank" class="choice_scarf">Mega-Blastoise</a> and you have a 
+            <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank" class="grass">Bulbasaur,</a> you are still screwed.
+            So let's get you the strongest pokemon for every type so that the next time you battle your friends, you destroy them mercilessly and secure those bragging rights.
+            </h2>
+        </div>
 
-        <button class="accordion">
-            <h3>Types</h3>
-        </button>
-        <div class="panel">
-            <h3>In Pokémon, types determine the strengths and weaknesses of a Pokémon's moves, with each </h3>
-            <h3>type having specific advantages and vulnerabilities against other types, influencing the effectiveness of battles</h3>
-            <h3>Check <a href="https://bulbapedia.bulbagarden.net/wiki/Type" target="_blank">this link</a> out to learn about types in more detail</h3>
+        <div class="hidden">
+            <h4>disclaimer: there is no gurantee that these pokemon are gonna thrive at the highest level of competitive pokemon because there are
+                many other factors affecting a competitive pokemon battle where there is thousands of dollars on the line. But I can gurantee that
+                you can beat your friends in your friendly battles with this information. (Unless your'e friends with <a href="https://www.youtube.com/@WolfeyVGC" target="_blank" class="choice_scarf">WolfeyVGC</a>)
+            </h4>
+        </div>
+
+        <div class="hidden">
+            <div>
+                <h2>So Lets Find the Strongest Pokemon For every type</h2>
+            </div>
+            <div class="button-container">
+                <button class="buttons fire" id="fire">
+                    <h1>Fire</h1>
+                </button>
+                <button class="buttons water" id="water">
+                    <h1>Water</h1>
+                </button>
+                <button class="buttons grass_button" id="grass">
+                    <h1>Grass</h1>
+                </button>
+                <button class="buttons normal_button" id="normal">
+                    <h1>Normal</h1>
+                </button>
+                <button class="buttons electric" id="electric">
+                    <h1>Electric</h1>
+                </button>
+                <button class="buttons ice" id="ice">
+                    <h1>Ice</h1>
+                </button>
+                <button class="buttons fighting_button" id="fighting">
+                    <h1>Fighting</h1>
+                </button>
+                <button class="buttons poison" id="poison">
+                    <h1>Poison</h1>
+                </button>
+                <button class="buttons bug" id="bug">
+                    <h1>Bug</h1>
+                </button>
+                <button class="buttons flying" id="flying">
+                    <h1>Flying</h1>
+                </button>
+                <button class="buttons psychic" id="psychic">
+                    <h1>Psychic</h1>
+                </button>
+                <button class="buttons dark" id="dark">
+                    <h1>Dark</h1>
+                </button>
+                <button class="buttons ghost" id="ghost">
+                    <h1>Ghost</h1>
+                </button>
+                <button class="buttons fairy" id="fairy">
+                    <h1>Fairy</h1>
+                </button>
+                <button class="buttons steel" id="steel">
+                    <h1>Steel</h1>
+                </button>
+                <button class="buttons rock" id="rock">
+                    <h1>Rock</h1>
+                </button>
+                <button class="buttons dragon" id="dragon">
+                    <h1>Dragon</h1>
+                </button>
+                <button class="buttons ground">
+                    <h1>Ground</h1>
+                </button>
+            </div>
         </div>
         
-        <button class="accordion" id="2">
-            <h3>Natures</h3>
-        </button>
-        <div class="panel">
-            <h3>In Pokémon, natures influence a Pokémon's stat growth by increasing one stat while decreasing another</h3>
-            <h3>There are 25 different natures, each boosting and hindering specific stats,</h3>
-            <h3>allowing trainers to customize their Pokémon's strengths based on their preferred battle strategy or role</h3>
-            <h3>Check <a href="https://bulbapedia.bulbagarden.net/wiki/Nature" target="_blank">this link</a> out to learn about natures more in depth</h3>
+        <div>
+            <h1 id="text"></h1>
         </div>
 
-        <button class="accordion" id="3">
-                <h3>Stats</h3>
-        </button>
-            <div class="panel">
-                <h3>In Pokémon, each Pokémon has six main stats: HP (Hit Points), Attack, Defense, Special Attack, Special Defense, and Speed</h3>
-                <h3>These stats determine a Pokémon's performance in battles. The base stats are inherent</h3>
-                <h3>to each species, while individual values (IVs) and effort values (EVs) add a layer of individuality and customization.</h3>
-                <h3>Trainers strategically train and breed Pokémon to optimize these stats for competitive battles</h3>
-                <h3>Check <a href="https://bulbapedia.bulbagarden.net/wiki/Stat" target="_blank">this link</a> out to get learn in depth about pokemon stats</h3>
-            </div>
-    </div>
-
-    <div class="hidden">
-        <h1 class="title">So Lets Find out the strongest pokemon for every type</h1>
-        <h1 class="title">And the next time you battle your friends, you demolish their asses</h1>
-    </div>
-
-    <div>
-
-        <div class="selector">
-            <input type="text" placeholder="Pokemon Type" id="type">
+        <div class="hidden">
+            <h2>Now Got Beat Up Your Friends and Secure Those Bragging Rights</h2>
+            <h2>Skeptical if our website works, go to this pokemon battle <a href="https://play.pokemonshowdown.com" target="_blank" class="fighting">simulator</a> to make your own pokemon teams and destroy your friends</h2>
+            <button class="analysis_button" id="analysis_button">
+                <h2>Analysis For Nerds</h2>
+            </button>
+            <h4 class="invisible" id="analysis_for_nerds">At first I webscrapped <a href="https://pokemondb.net" class="choice_scarf">PokemonDB</a> and "borrowed" all of the data that I needed. If you want to check my data, the whole website is literally my data. Then I wrote some python functions that turned every single pokemon into an object with their different stats and properties being classes. I also created a custom property known as "preferred attack"(the higher one out of the two stats). Then I graphed every pokemon in two Scatterplots one to find their offensive capabilites and defensive capabilites. I also had to learn a couple of Algebra 2 topics to maximize functionality in my website(make the graphs load 0.2seconds faster) and more geometry to learn how to do my CSS animations. All the graphs are interactive, the first graph compares the preferred attack and speed stat and the second graph compares the two defense stats. I also had a third interactive graph where I compared Infernape with Arceus</h4>
         </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="charts.js"></script>
 <script src="script.js"></script>
 </html>
